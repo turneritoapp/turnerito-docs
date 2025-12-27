@@ -1,111 +1,110 @@
 # 🗓️ Turnerito
 
-**Turnerito** is a professional appointment booking and management system
-designed for local businesses such as barbershops, salons, beauty centers
-and independent professionals.
+**Turnerito** es un sistema profesional de gestión y reserva de turnos
+diseñado para negocios locales como barberías, peluquerías, centros de
+estética y profesionales independientes.
 
-It centralizes bookings, availability, specialists, payments and client
-communication in a single web platform.
-
----
-
-## 🎯 What problem does Turnerito solve?
-
-Many small and medium businesses still manage appointments manually via
-WhatsApp, Instagram or paper.
-
-Turnerito provides:
-- A structured booking flow
-- Automated notifications
-- Business visibility and control
-- Less no-shows and better time management
+Centraliza reservas, disponibilidad, especialistas, pagos y comunicación
+con clientes en una única plataforma web.
 
 ---
 
-## ✨ Key Features
+## 🎯 ¿Qué problema resuelve Turnerito?
 
-### 👥 Multi-role system
-- **Superadmin**: platform-level management
-- **Admin**: business configuration and management
-- **Specialist**: personal schedule and appointments
-- **Client**: self-service booking and history
+Muchos pequeños y medianos negocios todavía gestionan sus turnos de forma
+manual a través de WhatsApp, Instagram o en papel.
 
-### ⚙️ Core functionality
-- Online appointment booking
-- Service & specialist management
-- Availability & calendar control
-- Automated WhatsApp notifications
-- Payment processing (optional)
-- Business analytics & reports
-- Feature toggles per business
+Turnerito permite:
+- Un flujo de reservas claro y ordenado
+- Notificaciones automáticas
+- Mayor control y visibilidad del negocio
+- Reducción de ausencias y mejor gestión del tiempo
 
 ---
 
-## 🛠 Technology Stack (high level)
+## ✨ Funcionalidades principales
 
-- **Backend**: PHP (MVC architecture)
-- **Database**: MySQL / MariaDB
+### 👥 Sistema multi-rol
+- **Superadmin**: gestión a nivel plataforma
+- **Admin**: configuración y administración del negocio
+- **Especialista**: gestión de agenda y turnos personales
+- **Cliente**: reserva autogestionada e historial de turnos
+
+### ⚙️ Funcionalidad core
+- Reserva de turnos online
+- Gestión de servicios y especialistas
+- Control de disponibilidad y calendario
+- Notificaciones automáticas vía WhatsApp
+- Procesamiento de pagos (opcional)
+- Reportes y métricas del negocio
+- Activación/desactivación de funcionalidades por negocio
+
+---
+
+## 🛠 Stack tecnológico (alto nivel)
+
+- **Backend**: PHP (arquitectura MVC)
+- **Base de datos**: MySQL / MariaDB
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **Integrations**:
-  - MercadoPago (payments)
-  - WhatsApp Business API (notifications & OTP)
-- **Infrastructure**:
+- **Integraciones**:
+  - MercadoPago (pagos)
+  - WhatsApp Business API (notificaciones y OTP)
+- **Infraestructura**:
   - Cron jobs
-  - Logging & monitoring
-  - Secure environment configuration
+  - Sistema de logs y monitoreo
+  - Configuración segura por entorno
 
 ---
 
-## 🧠 Architecture Overview
+## 🧠 Visión general de la arquitectura
 
-Turnerito is built using a custom MVC architecture with:
-- Clear separation of concerns
-- Role-based access control
-- Secure data validation & sanitization
-- Modular services for integrations
+Turnerito está construido sobre una arquitectura MVC propia, con:
+- Separación clara de responsabilidades
+- Control de acceso basado en roles
+- Validación y sanitización segura de datos
+- Servicios modulares para integraciones externas
 
-> Internal architecture and implementation details are intentionally not
->公开 in this repository.
-
----
-
-## 📈 Project Status
-
-✅ Fully functional system  
-✅ Multi-role production-ready platform  
-🔒 Core source code is private  
-
-This public repository is used for:
-- Product overview
-- Documentation
-- Roadmap & communication
-- External visibility
+> Los detalles internos de arquitectura e implementación se mantienen
+> privados de forma intencional.
 
 ---
 
-## 🛣️ Roadmap (public)
+## 📈 Estado del proyecto
 
-- Public landing page
-- Improved onboarding flow
-- Advanced analytics dashboard
-- Mobile-first booking experience
-- Additional payment providers
+✅ Sistema completamente funcional  
+✅ Plataforma multi-rol lista para producción  
+🔒 Código fuente principal privado  
 
----
-
-## 📸 Screenshots
-
-_(Coming soon)_
+Este repositorio público se utiliza para:
+- Presentación del producto
+- Documentación general
+- Roadmap y comunicación
+- Visibilidad externa del proyecto
 
 ---
 
-## 📬 Contact
+## 🛣️ Roadmap (público)
 
-Interested in Turnerito, a demo or collaboration?
-
-📧 contacto@turnerito.app  
-🌐 https://turnerito.app  
+- Landing page pública
+- Mejora del flujo de onboarding
+- Dashboard de analíticas avanzadas
+- Experiencia de reserva mobile-first
+- Nuevos proveedores de pago
 
 ---
 
-© Turnerito — All rights reserved
+## 📸 Capturas de pantalla
+
+_(Próximamente)_
+
+---
+
+## 📬 Contacto
+
+¿Te interesa Turnerito, una demo o colaborar en el proyecto?
+
+📧 **turnerito.app@gmail.com**
+
+---
+
+© Turnerito — Todos los derechos reservados
