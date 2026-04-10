@@ -1,10 +1,10 @@
 # 🗓️ Turnerito
 
-**Turnerito** es un sistema profesional de gestión y reserva de turnos
+**Turnerito** es un sistema de gestión y reserva de turnos
 diseñado para negocios locales como barberías, peluquerías, centros de
 estética y profesionales independientes.
 
-Centraliza reservas, disponibilidad, especialistas, pagos y comunicación
+Te permite centralizar reservas, disponibilidad, especialistas, pagos y comunicación
 con clientes en una única plataforma web.
 
 ---
@@ -12,7 +12,7 @@ con clientes en una única plataforma web.
 ## 🎯 ¿Qué problema resuelve Turnerito?
 
 Muchos pequeños y medianos negocios todavía gestionan sus turnos de forma
-manual a través de WhatsApp, Instagram o en papel.
+manual a través de WhatsApp, Instagram o en agenda fisica.
 
 Turnerito permite:
 
@@ -27,7 +27,6 @@ Turnerito permite:
 
 ### 👥 Sistema multi-rol
 
-* **Superadmin**: gestión a nivel plataforma
 * **Admin**: configuración y administración del negocio
 * **Especialista**: gestión de agenda y turnos personales
 * **Cliente**: reserva autogestionada e historial de turnos
@@ -38,9 +37,8 @@ Turnerito permite:
 * Gestión de servicios y especialistas
 * Control de disponibilidad y calendario
 * Notificaciones automáticas vía WhatsApp
-* Procesamiento de pagos (opcional)
+* Procesamiento de pagos
 * Reportes y métricas del negocio
-* Activación/desactivación de funcionalidades por negocio
 
 ---
 
@@ -98,16 +96,16 @@ Control completo del negocio, agenda y servicios.
 
 ---
 
-## 🛠 Stack tecnológico (alto nivel)
+## 🛠 Stack tecnológico
 
 * **Backend**: PHP (arquitectura MVC)
-* **Base de datos**: MySQL / MariaDB
+* **Base de datos**: MySQL
 * **Frontend**: HTML, CSS, JavaScript, Bootstrap
 
 ### 🔌 Integraciones
 
 * MercadoPago (pagos)
-* WhatsApp Business API (notificaciones y OTP)
+* WhatsApp (notificaciones y OTP)
 
 ### ⚙️ Infraestructura
 
@@ -133,7 +131,7 @@ Turnerito está construido sobre una arquitectura MVC propia, con:
 
 ## 📈 Estado del proyecto
 
-✅ Sistema completamente funcional
+✅ Sistema funcional
 ✅ Plataforma multi-rol lista para producción
 🔒 Código fuente principal privado
 
