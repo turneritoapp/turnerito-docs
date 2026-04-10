@@ -87,9 +87,9 @@ Gestión de turnos e historial.
 
 Control completo del negocio, agenda y servicios.
 
-![Dashboard 1](assets/images/admin-especialista/1.dashboard.png)
-![Dashboard 2](assets/images/admin-especialista/2.dashboard.png)
-![Dashboard 3](assets/images/admin-especialista/3.dashboard.png)
+![Login](assets/images/admin-especialista/1.login.png)
+![Dashboard](assets/images/admin-especialista/2.dashboard.png)
+![Dashboard](assets/images/admin-especialista/3.dashboard2.png)
 ![Calendario](assets/images/admin-especialista/4.calendario.png)
 ![Servicios](assets/images/admin-especialista/5.servicios.png)
 ![Especialistas](assets/images/admin-especialista/6.especialistas.png)
