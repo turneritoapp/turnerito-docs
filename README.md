@@ -1,44 +1,53 @@
 # 🗓️ Turnerito
 
-**Turnerito** es un sistema de gestión y reserva de turnos
-diseñado para negocios locales como barberías, peluquerías, centros de
+**Turnerito** es un sistema web **multi-tenant** de gestión y reserva de turnos
+diseñado para negocios de servicios como barberías, peluquerías, centros de
 estética y profesionales independientes.
 
-Te permite centralizar reservas, disponibilidad, especialistas, pagos y comunicación
-con clientes en una única plataforma web.
+Cada negocio opera bajo su propio portal público (`/{negocio}/reservar`) y cuenta con
+panel de administración propio, calendario interactivo y automatizaciones activas.
 
 ---
 
 ## 🎯 ¿Qué problema resuelve Turnerito?
 
 Muchos pequeños y medianos negocios todavía gestionan sus turnos de forma
-manual a través de WhatsApp, Instagram o en agenda fisica.
+manual a través de WhatsApp, Instagram o en agenda física.
 
 Turnerito permite:
 
 * Un flujo de reservas claro y ordenado
-* Notificaciones automáticas
+* Verificación de turnos por WhatsApp (OTP)
+* Recordatorios automáticos para reducir ausencias
 * Mayor control y visibilidad del negocio
-* Reducción de ausencias y mejor gestión del tiempo
+* Gestión centralizada de especialistas, servicios y disponibilidad
 
 ---
 
 ## ✨ Funcionalidades principales
 
-### 👥 Sistema multi-rol
+### 👥 Sistema multi-rol (4 roles)
 
-* **Admin**: configuración y administración del negocio
-* **Especialista**: gestión de agenda y turnos personales
+* **Superadmin**: gestión global de la plataforma — negocios, usuarios, planes, logs y configuraciones
+* **Admin**: administración completa del negocio propio
+* **Especialista**: agenda y servicios asignados por el admin
 * **Cliente**: reserva autogestionada e historial de turnos
 
 ### ⚙️ Funcionalidad core
 
-* Reserva de turnos online
+* Reserva de turnos online con portal público por negocio
+* Verificación OTP por WhatsApp al confirmar la reserva
+* Recordatorios automáticos por WhatsApp (24h y 1h antes del turno)
 * Gestión de servicios y especialistas
-* Control de disponibilidad y calendario
-* Notificaciones automáticas vía WhatsApp
-* Procesamiento de pagos
-* Reportes y métricas del negocio
+* Calendario interactivo con vista de turnos y bloqueos de agenda
+* Bloqueos manuales de días completos o rangos horarios
+* Métodos de pago: efectivo o transferencia bancaria (con CBU/Alias configurable)
+* Señas configurables por servicio
+* Notificaciones internas de nuevos turnos
+* Exportación de clientes a CSV
+* Sistema de planes con límites por negocio (Trial y Pro)
+* Métricas y dashboard por negocio
+* Auto-registro de negocios y formulario de solicitud de demo
 
 ---
 
@@ -46,7 +55,7 @@ Turnerito permite:
 
 ### 🌐 Landing pública
 
-Vista inicial donde el cliente conoce el negocio y comienza la reserva.
+Vista inicial donde el cliente conoce el negocio y puede solicitar una demo o registrarse.
 
 ![Landing](assets/images/landing/landing-1.png)
 ![Landing](assets/images/landing/landing-2.png)
@@ -66,7 +75,7 @@ Proceso simple e intuitivo para sacar un turno en pocos pasos.
 ![Especialista](assets/images/proceso-cliente/2.especialista.png)
 ![Fecha](assets/images/proceso-cliente/3.fecha.png)
 ![Hora](assets/images/proceso-cliente/4.hora.png)
-![Metodo de Pago](assets/images/proceso-cliente/5.metodo-pago.png)
+![Método de pago (efectivo / transferencia)](assets/images/proceso-cliente/5.metodo-pago.png)
 ![Confirmación](assets/images/proceso-cliente/6.confirmar.png)
 ![Datos del Cliente](assets/images/proceso-cliente/7.datos-clientes.png)
 ![Reserva Realizada](assets/images/proceso-cliente/9.reservado.png)
@@ -98,18 +107,19 @@ Control completo del negocio, agenda y servicios.
 
 ## 🛠 Stack tecnológico
 
-* **Backend**: PHP (arquitectura MVC)
-* **Base de datos**: MySQL
-* **Frontend**: HTML, CSS, JavaScript, Bootstrap
+* **Backend**: PHP 8.2 con arquitectura MVC propia (sin frameworks)
+* **Base de datos**: MariaDB / MySQL
+* **Frontend**: Bootstrap 5, Bootstrap Icons, jQuery, SweetAlert2, FullCalendar
 
-### 🔌 Integraciones
+### 🔌 Integraciones activas
 
-* MercadoPago (pagos)
-* WhatsApp (notificaciones y OTP)
+* **WhatsApp via Twilio**: verificación OTP al reservar y recordatorios automáticos
+* **Email via PHPMailer**: recuperación de contraseña
 
 ### ⚙️ Infraestructura
 
-* Cron jobs
+* Apache + XAMPP
+* Cron jobs (recordatorios, backups, rotación de logs, optimización de BD)
 * Sistema de logs y monitoreo
 * Configuración segura por entorno
 
@@ -121,6 +131,7 @@ Turnerito está construido sobre una arquitectura MVC propia, con:
 
 * Separación clara de responsabilidades
 * Control de acceso basado en roles
+* Aislamiento multi-tenant (todas las queries filtran por negocio)
 * Validación y sanitización segura de datos
 * Servicios modulares para integraciones externas
 
@@ -133,6 +144,7 @@ Turnerito está construido sobre una arquitectura MVC propia, con:
 
 ✅ Sistema funcional
 ✅ Plataforma multi-rol lista para producción
+✅ Multi-tenant activo (múltiples negocios independientes)
 🔒 Código fuente principal privado
 
 Este repositorio público se utiliza para:
@@ -146,11 +158,18 @@ Este repositorio público se utiliza para:
 
 ## 🛣️ Roadmap (público)
 
-* Landing page pública
+### V1 — Implementado ✅
+* Portal de reservas público por negocio
+* Verificación OTP por WhatsApp
+* Recordatorios automáticos de turnos
+* Panel admin completo con calendario interactivo
+* Sistema de planes y gestión desde superadmin
+* Landing pública con solicitud de demo y auto-registro
+
+### V2 — Próximamente 🚧
+* Integración MercadoPago (pagos online)
 * Mejora del flujo de onboarding
 * Dashboard de analíticas avanzadas
-* Experiencia de reserva mobile-first
-* Nuevos proveedores de pago
 
 ---
 
@@ -158,8 +177,10 @@ Este repositorio público se utiliza para:
 
 ¿Te interesa Turnerito, una demo o colaborar en el proyecto?
 
+🌐 **[turneritoapp.com](https://turneritoapp.com/)**
 📧 **[turnerito.app@gmail.com](mailto:turnerito.app@gmail.com)**
+📱 **[+54 351 530-3017](https://wa.me/543515303017)**
 
 ---
 
-© Turnerito — Todos los derechos reservados
+© Turnerito App — Todos los derechos reservados
