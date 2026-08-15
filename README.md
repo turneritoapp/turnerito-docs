@@ -106,7 +106,7 @@ El sistema detecta si el cliente ya tiene sesión activa y le permite confirmar 
 |---|---|---|
 | Especialistas | hasta 2 | ilimitados |
 | Servicios | hasta 5 | ilimitados |
-| Reservas online | ✅ | ✅ |
+| Reservas online | 50 | ilimitados |
 | Verificación OTP WhatsApp | ❌ | ✅ |
 | Recordatorios automáticos | ❌ | ✅ |
 
