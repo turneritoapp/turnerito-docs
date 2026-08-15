@@ -92,7 +92,7 @@ El sistema detecta si el cliente ya tiene sesión activa y le permite confirmar 
 * Sistema de auditoría de acciones por usuario, rol y negocio
 
 **Plataforma y operaciones**
-* Sistema de planes (Trial, Pro, Business) con feature flags y límites configurables
+* Sistema de planes (Trial, Pro) con feature flags y límites configurables
 * Panel superadmin con 14 módulos: negocios, usuarios, planes, pagos, auditoría, logs, respaldos y más
 * Sistema de logs por categoría con rotación automática
 * Backups automáticos de base de datos con descarga desde el panel
